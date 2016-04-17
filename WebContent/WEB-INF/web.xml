@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
-	<display-name>ExemploServlet</display-name>
+	<display-name>SomaServlet</display-name>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm </welcome-file>	
@@ -11,14 +11,44 @@
 	</welcome-file-list>
 	
 	<servlet>
-		<servlet-name>com_servlet_ExemploServlet</servlet-name>
-		<servlet-class>
-		com.servlet.ExemploServlet
-		</servlet-class>
+		<servlet-name>com_servlet_SomaServlet</servlet-name>
+		<servlet-class>com.servlet.SomaServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>com_servlet_ExemploServlet</servlet-name>
-		<url-pattern>/AcessoServlet</url-pattern>
+		<servlet-name>com_servlet_SomaServlet</servlet-name>
+		<url-pattern>/SomaServlet</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>com_servlet_SomaCardapioServlet</servlet-name>
+		<servlet-class>com.servlet.SomaCardapioServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com_servlet_SomaCardapioServlet</servlet-name>
+		<url-pattern>/SomaCardapioServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>com_servlet_TabuadaUser</servlet-name>
+		<servlet-class>com.servlet.TabuadaUser</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com_servlet_TabuadaUser</servlet-name>
+		<url-pattern>/TabuadaUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>com_servlet_TabuadaTotal</servlet-name>
+		<servlet-class>com.servlet.TabuadaTotal</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com_servlet_TabuadaTotal</servlet-name>
+		<url-pattern>/TabuadaTotal</url-pattern>
+	</servlet-mapping>
+	
+	
 </web-app>
