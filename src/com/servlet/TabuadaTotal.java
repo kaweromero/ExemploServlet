@@ -12,8 +12,6 @@ public class TabuadaTotal extends HttpServlet{
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		
-		String numeroUser = request.getParameter("tabu");
 		PrintWriter out = response.getWriter();
 					
 		  out.println("<html>");
@@ -23,6 +21,7 @@ public class TabuadaTotal extends HttpServlet{
 		  out.println("<table border='1px' >");
 		  
 		for(int i = 1;i<=10;i++){
+			
 			out.println("<tr>");
 			
 			for(int j = 1;j<=10;j++){
