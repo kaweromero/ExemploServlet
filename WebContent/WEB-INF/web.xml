@@ -51,4 +51,13 @@
 	</servlet-mapping>
 	
 	
+	<servlet>
+		<servlet-name>com_servlet_Headers</servlet-name>
+		<servlet-class>com.servlet.Headers</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com_servlet_Headers</servlet-name>
+		<url-pattern>/Headers</url-pattern>
+	</servlet-mapping>
 </web-app>
