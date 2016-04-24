@@ -28,7 +28,7 @@
   out.println("</body>");
   out.println("</html>");
 	
-	out.close();
+	
   
   %>
 
